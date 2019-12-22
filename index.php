@@ -11,23 +11,23 @@
   <div class="wrapper-page">
 
     <div class="left-menu">
-      s<br>
-      s<br>
-      s<br>
-      s<br>
-      s<br>
-      s<br>
-      s<br>
-      s<br>
-      s<br>
-      s<br>
-      s<br>
-      s<br>
-      s<br>
-      s<br>
-      s<br>
-      s<br>
-
+      <center><h1>Menu</h1></center>
+      <a href="#neco"><div class="menu-item"> Něco </div></a>
+      <div class="menu-item"> Něco </div>
+      <div class="menu-item"> Něco </div>
+      <div class="menu-item"> Něco </div>
+      <div class="menu-dropdown"> Něco
+        <div class="dropdown-content">
+          <div class="menu-item"> Něco </div>
+          <div class="menu-item"> Něco </div>
+        </div>
+      </div>
+      <div class="menu-dropdown"> Něco
+        <div class="dropdown-content">
+          <div class="menu-item"> Něco </div>
+          <div class="menu-item"> Něco </div>
+        </div>
+      </div>
     </div>
 
     <div class="main">
