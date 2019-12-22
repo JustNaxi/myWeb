@@ -33,7 +33,8 @@ body
   width: 20%;
   min-height: 100%;
   background-color: red;
-  float:left;
+  display: inline-block;
+  vertical-align: top;
 }
 
 .left-menu a:link, .left-menu a:visited, .left-menu a:active
@@ -98,18 +99,22 @@ body
   width: 100%;
   background-color: pink;
   transform:translate(98%, -29px);
-  z-index:1000;
+
 }
 
 .main
 {
   position: relative;
+  display: inline-block;
+  vertical-align: top;
   padding:0;
   margin:0;
   margin-bottom: 20px;
-  margin-top: 60px;
-  left: 23%;
+  margin-top: 100px;
+  left: 3%;
   width: 75%;
   min-height: 100%;
-  background-color: blue;
+  background-color: red;
+  z-index: -1;
+
 }

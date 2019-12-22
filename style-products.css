@@ -1,0 +1,57 @@
+/*
+.product
+{
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  left: 10%;
+  margin: 10px;
+  padding: 0px;
+  height: 350px;
+  width: 300px;
+  transform:translate(-50%, 0%);
+  background: white;
+}
+*/
+
+.products-wrapper
+{
+  position: static;
+  margin: 30px 5px 30px 5px;
+  padding: 0px;
+  text-align: center;
+}
+
+.product
+{
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  margin: 1px 0px 2px 0px;
+  padding: 0px;
+  height: 400px;
+  width: 300px;
+  background: white;
+}
+
+.product img
+{
+  position: static;
+  width: 80%;
+  top: 20px;
+  height: 40%;
+}
+
+
+
+.product p
+{
+  text-align: left;
+  margin: 20px 20px 20px 20px;
+}
+
+.product #cena
+{
+  text-align: right;
+  margin: 20px 20px 20px 20px;
+}
