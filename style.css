@@ -1,0 +1,50 @@
+body
+{
+  background-color: #ffff4d;
+}
+
+.wrapper-page
+{
+  position: absolute;
+  padding:0;
+  margin:0;
+  margin-bottom: 50px;
+  margin-top: 30px;
+  left: 50%;
+  width: 90%;
+  min-width: 1024px;
+  min-height: 10px;
+ transform:translate(-50%, 0%);
+ background-color: #FFFFFF;
+}
+
+.left-menu
+{
+  position: relative;
+  padding:0;
+  margin:0;
+  margin-bottom: 30px;
+  margin-top: 30px;
+  left: 2%;
+  width: 20%;
+  min-height: 100%;
+  /*transform:translate(-50%, 0%);*/
+  background-color: red;
+  float:left;
+
+
+}
+
+.main
+{
+  position: relative;
+  padding:0;
+  margin:0;
+  margin-bottom: 20px;
+  margin-top: 60px;
+  left: 23%;
+  width: 75%;
+  min-height: 100%;
+  /*transform:translate(-50%, 0%);*/
+  background-color: blue;
+}
