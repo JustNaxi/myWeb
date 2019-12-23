@@ -1,18 +1,3 @@
-/*
-.product
-{
-  position: relative;
-  display: inline-block;
-  vertical-align: top;
-  left: 10%;
-  margin: 10px;
-  padding: 0px;
-  height: 350px;
-  width: 300px;
-  transform:translate(-50%, 0%);
-  background: white;
-}
-*/
 
 .products-wrapper
 {
@@ -24,7 +9,7 @@
 
 .product
 {
-  position: relative;
+  position: static;
   display: inline-block;
   vertical-align: top;
   margin: 1px 1px 2px 1px;
@@ -32,6 +17,7 @@
   height: 400px;
   width: 300px;
   background-color: #ffcc00;
+  z-index: 3;
 }
 
 .product img
@@ -41,8 +27,6 @@
   top: 20px;
   height: 40%;
 }
-
-
 
 .product p
 {
