@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <title>MyPage</title>
 
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style-test.css">
     <link rel="stylesheet" href="style-products.css">
   </head>
   <body>
