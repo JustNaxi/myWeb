@@ -1,0 +1,11 @@
+CREATE TABLE products
+( 
+  idProduct INT NOT NULL AUTO_INCREMENT, 
+  kategory VARCHAR(30) NOT NULL, 
+  name VARCHAR(30) NOT NULL, 
+  description TEXT NOT NULL, 
+  price INT NOT NULL, 
+  image VARCHAR(30) NOT NULL, 
+  counts INT NOT NULL, 
+  PRIMARY KEY(idProduct) 
+)
