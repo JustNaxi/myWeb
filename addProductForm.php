@@ -10,7 +10,6 @@
   <body>
 
   <div class="wrapper-page">
-
     <div class="left-menu">
       <center><h1>Menu</h1></center>
 
@@ -59,16 +58,12 @@
 
       ?>
     </div>
-
     <div class="main">
-      <div class="products-wrapper">
-
-
         <?php if(true) : ?>
           <center>
           <form action="addProduct.php" method="post">
               <table>
-                  <tr><th>Name:</th><th><input type="text" name="name"></th>
+                  <tr><th>Name:</th><th><input style="z-index:1000;" type="text" name="name"></th>
                   <tr><th>Image:</th><th><input type="text" name="image"></th>
                   <tr><th>Description:</th><th><input type="text" name="description"></th>
               </table>
@@ -78,7 +73,6 @@
 
         <?php endif; ?>
 
-      </div>
     </div>
 
   </div>

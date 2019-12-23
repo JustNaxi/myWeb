@@ -104,7 +104,7 @@ body
 
 .main
 {
-  position: relative;
+  position: static;
   display: inline-block;
   vertical-align: top;
   padding:0;
