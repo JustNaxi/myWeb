@@ -47,6 +47,8 @@
 .product p
 {
   text-align: left;
+  max-height: 90px;
+  overflow:hidden;
   margin: 20px 20px 20px 20px;
 }
 

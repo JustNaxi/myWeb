@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
-    <meta charset="utf-8">
+    <meta charset="utf-16-czech">
     <title>MyPage</title>
 
     <link rel="stylesheet" href="style.css">
@@ -33,64 +33,38 @@
 
     <div class="main">
       <div class="products-wrapper">
-        <div class="product">
-          <br>
-          <img src="obrazek.png">
-          <label><b>Koťátko</b></label>
-          <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Proin in tellus sit amet nibh dignissim sagittis. Aliquam erat volutpat. In dapibus augue non sapien. Fusce consectetuer risus a nunc.</p>
-          <p id="cena"><b>Cena: 1558 Kč</b></p>
-        </div>
-        <div class="product">
-          s
-        </div>
-        <div class="product">
+        <?php
+          $servername = "localhost";
+          $username = "Naxi";
+          $password = "tajneheslo";
+          $dbname = "myshop";
+          $conn = mysqli_connect($servername, $username, $password, $dbname);
 
-        </div>
-        <div class="product">
-          s
-        </div>
-        <div class="product">
+          if ($conn->connect_error) {
+              die("Connection failed: " . $conn->connect_error);
+          }
 
-        </div>
-        <div class="product">
-          s
-        </div>
-        <div class="product">
-          s
-        </div>
-        <div class="product">
-          s
-        </div>
-        <div class="product">
+          $sql = "SELECT name, image, description, price FROM Products";
+          $result = mysqli_query($conn, $sql);
 
-        </div>
-        <div class="product">
-          s
-        </div>
-        <div class="product">
 
-        </div>
-        <div class="product">
-          s
-        </div>
-        <div class="product">
-          s
-        </div>
-        <div class="product">
-          s
-        </div>
-        <div class="product">
+          if (mysqli_num_rows($result) > 0)
+          {
+            while($row = mysqli_fetch_assoc($result))
+            {
+              echo "<div class='product'><br>";
+              echo "<img src='data/images/".$row["image"]."'></img>";
+              echo "<h4><b>".$row["name"]."</b></h4>";
+              echo "<p>".$row["description"]."</p>";
+              echo "<p id='cena'><b>Cena: ".$row["price"]." Kč</b></p>";
+              echo "</div>";
+            }
+          } else
+          {
+           echo "0 results";
+          }
 
-        </div>
-        <div class="product">
-          s
-        </div>
-        <div class="product">
-
-        </div>
-        <div class="product">
-          s
-        </div>
+        ?>
       </div>
     </div>
 
