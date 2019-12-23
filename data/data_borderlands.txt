@@ -1,0 +1,8 @@
+insert into Guns(name , manufacture, type, element, firerate, accuracy, price, magazine, counts, image, description)
+values
+('Bearcat','Dahl', 'Assault Rifle', 'Corrosive' , 1, 93.6,280,35,3,'baercat.jpg','I love the smell of popcorn in the morning.'),
+('Seraphim','Dahl', 'Assault Rifle', 'Incendiary' , 7.2, 76.6,300,40,3,'seraphim.jpg','Holy? Holy? Holey!'),
+('Veruc','Dahl', 'Assault Rifle', 'Non-elemental' , 6.6, 81.5,200,35,3,'veruc.jpg','I want that rifle, Daddy!'),
+('Hornet','Dahl', 'Pistol', 'Corrosive' , 14.8, 82,200,1,3,'hornet.jpg','Fear the swarm!'),
+('Railer','Dahl', 'Sniper Rifle', 'Shock' , 13.3, 95.6,500,12,3,'railer.jpg',' '),
+('Sloth','Dahl', 'Sniper Rifle', 'Slug' , 6.7, 96.8,430,11,3,'sloth.jpg','Yea, booze\'ll do that to ya…')

@@ -9,3 +9,22 @@ CREATE TABLE products
   counts INT NOT NULL, 
   PRIMARY KEY(idProduct) 
 )
+
+
+
+CREATE TABLE guns
+( 
+  idProduct INT NOT NULL AUTO_INCREMENT, 
+  name VARCHAR(30) NOT NULL, 
+  manufacture VARCHAR(30) NOT NULL,  
+  type VARCHAR(30) NOT NULL,  
+  element VARCHAR(30) NOT NULL,  
+  firerate REAL NOT NULL,  
+  accuracy REAL NOT NULL, 
+  price INT NOT NULL, 
+  magazine INT NOT NULL,  
+  image VARCHAR(30) NOT NULL, 
+  counts INT NOT NULL, 
+  description TEXT NOT NULL,
+  PRIMARY KEY(idProduct) 
+)

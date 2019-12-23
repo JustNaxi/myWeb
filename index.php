@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
-    <meta charset="utf-16-czech">
+    <meta charset="utf-8">
     <title>MyPage</title>
 
     <link rel="stylesheet" href="style.css">
@@ -13,22 +13,33 @@
 
     <div class="left-menu">
       <center><h1>Menu</h1></center>
-      <a href="#neco"><div class="menu-item"> Něco </div></a>
-      <div class="menu-item"> Něco </div>
-      <div class="menu-item"> Něco </div>
-      <div class="menu-item"> Něco </div>
-      <div class="menu-dropdown"> Něco
-        <div class="dropdown-content">
-          <div class="menu-item"> Něco </div>
-          <div class="menu-item"> Něco </div>
-        </div>
-      </div>
-      <div class="menu-dropdown"> Něco
-        <div class="dropdown-content">
-          <div class="menu-item"> Něco </div>
-          <div class="menu-item"> Něco </div>
-        </div>
-      </div>
+
+      <?php
+        $servername = "localhost";
+        $username = "Naxi";
+        $password = "tajneheslo";
+        $dbname = "myshop";
+        $conn = mysqli_connect($servername, $username, $password, $dbname);
+
+        if ($conn->connect_error) {
+            die("Connection failed: " . $conn->connect_error);
+        }
+
+        mysqli_query($conn, "SET CHARACTER SET utf8");
+
+        $sql = "SELECT type FROM guns GROUP BY type";
+        $result = mysqli_query($conn, $sql);
+
+
+        if (mysqli_num_rows($result) > 0)
+        {
+          while($row = mysqli_fetch_assoc($result))
+          {
+            echo "<a href=\"#neco\"><div class=\"menu-item\">".$row["type"]."</div></a>";
+          }
+        }
+
+      ?>
     </div>
 
     <div class="main">
@@ -44,7 +55,9 @@
               die("Connection failed: " . $conn->connect_error);
           }
 
-          $sql = "SELECT name, image, description, price FROM Products";
+          mysqli_query($conn, "SET CHARACTER SET utf8");
+
+          $sql = "SELECT name, image, description, price FROM guns";
           $result = mysqli_query($conn, $sql);
 
 
@@ -56,7 +69,7 @@
               echo "<img src='data/images/".$row["image"]."'></img>";
               echo "<h4><b>".$row["name"]."</b></h4>";
               echo "<p>".$row["description"]."</p>";
-              echo "<p id='cena'><b>Cena: ".$row["price"]." Kč</b></p>";
+              echo "<p id='cena'><b>Cena: ".$row["price"]." $</b></p>";
               echo "</div>";
             }
           } else
