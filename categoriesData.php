@@ -17,42 +17,6 @@ $result = mysqli_query($conn, $sql);
 $json = array();
 while($row = mysqli_fetch_assoc($result)) {
 
-/* VERSION
-  $is = false;
-
-    foreach ($json as $key => $val)
-    {
-        if ($val['category'] == $row["category"])
-        {
-            $json[$key]['value'][] = $row["name"];
-            $is = true;
-            continue;
-        }
-    }
-
- if (!$is)
- {
-    $json[] = array(
-      'category' => $row["category"],
-      'value' => array($row["name"])
-
-    );
-  }
-  */
-
-
-  /* VERSION 2
-  if(array_key_exists($row['category'], $json))
-  {
-    $json[$row['category']][] = $row["name"];
-  }
-  else
-  {
-    $json[] = array(
-      $row["category"] => array($row["name"])
-    );
-  }
-  */
   $json[$row['category']][] = $row["name"];
 }
 

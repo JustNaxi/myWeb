@@ -65,26 +65,6 @@
     {
 
       var form = document.getElementById("dynamicInputs");
-      /*
-      form.innerHTML+="Category:"+
-       "<input type=\"text\" name=\"category_"+inputsCount+"\">"+
-       "&nbsp;&nbsp; Name: "+
-       "<input type=\"text\" name=\"name_"+inputsCount+"\"><br>";
-       */
-       /*
-       var tmp="";
-
-       tmp+="<datalist id=\"categories\">";
-
-        for (var i in result) {
-          tmp+="<option value=\""+i+"\">";
-        }
-
-
-        tmp+= "</datalist>";
-
-        form.innerHTML+=tmp;
-        */
 
 
         form.innerHTML+="Category:"+
