@@ -11,3 +11,23 @@ insert into Guns(name , manufacture, type, element, firerate, accuracy, price, m
 values
 ('Shotgun 1340','Hyperion', 'Shotgun', 'Slug' , 4.3, 63.6,430,10,2,'shotgun1340.jpg','I like being a gun.'),
 ('Morningstar','Hyperion', 'Sniper Rifle', 'Non-elemental' , 1, 96.4,510,10,5,'morningstar.jpg','a Rose by any other name…')
+
+
+
+
+
+insert into categories(category, name)
+values
+('Gun type', 'Pistol'),
+('Gun type', 'Assault Rifle'),
+('Gun type', 'Sniper Rifle'),
+('Gun type', 'Shotgun'),
+('Element', 'Corrosive'),
+('Element', 'Incendiary'),
+('Element', 'Shock'),
+('Element', 'Slug'),
+('Element', 'Non-elemental'),
+('Manufacture', 'Dahl'),
+('Manufacture', 'Hyperion'),
+('Manufacture', 'Jakobs'),
+('Manufacture', 'Maliwan')

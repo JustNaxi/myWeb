@@ -28,3 +28,13 @@ CREATE TABLE guns
   description TEXT NOT NULL,
   PRIMARY KEY(idProduct) 
 )
+
+
+
+CREATE TABLE categories
+( 
+  idCategory INT NOT NULL AUTO_INCREMENT,
+  category VARCHAR(30) NOT NULL,
+  name VARCHAR(30) NOT NULL,
+  PRIMARY KEY(idCategory) 
+)
