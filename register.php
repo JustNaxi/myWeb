@@ -1,4 +1,6 @@
 <?php
+
+
   $servername = "localhost";
   $username = "Naxi";
   $password = "tajneheslo";
@@ -56,9 +58,8 @@
     $query = "INSERT INTO users (username, email, password, firstname, secondname, city, PSC, street, telephone) VALUES('$username', '$email', '$password', '$firstName', '$secondName', '$city', '$PSC', '$street', '$telephone')";
     mysqli_query($conn, $query);
 
-    //session_start();
-  	//$_SESSION['username'] = $username;
-  	//header('location: index.php');
+
+  	header('location: index.php');
   }
   else {
     header('location: registerForm.php');
