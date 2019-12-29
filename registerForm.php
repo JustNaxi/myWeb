@@ -86,6 +86,7 @@
           <form action="addProduct.php" method="post" id="form">
               <table>
                   <tr><th>Username:</th><th><input type="text" name="name"></th>
+                  <tr><th>Email:</th><th><input type="text" name="email"></th>
                   <tr><th>Password:</th><th><input onInput="controlPassword()" type="password" name="password" id="password"></th>
                   <tr><th>Repeate password:</th><th><input onInput="controlPassword()" type="password" name="password2" id="password2"></th><th width="30" align="left" id="pswdWarning"></th>
               </table>
