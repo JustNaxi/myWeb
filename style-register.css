@@ -1,0 +1,75 @@
+.main
+{
+color:black;
+text-shadow: 1px 1px 1px black;
+}
+
+h1
+{
+color:black;
+text-shadow: 0px 0px 0px black;
+}
+
+input[type=text]
+{
+  color:blue;
+}
+
+input[type=submit]
+{
+  background-color: #ffcc00;
+  border: none;
+  color: #201f24;
+  padding: 8px 35px;
+  text-align: center;
+  font-weight: bold;
+  display: inline-block;
+  font-size: 16px;
+  align: right;
+}
+
+input[type=submit]
+{
+  background-color: #ffcc00;
+  border: none;
+  color: #201f24;
+  padding: 8px 35px;
+  text-align: center;
+  font-weight: bold;
+  display: inline-block;
+  font-size: 16px;
+  align: right;
+}
+
+input[type=submit]:hover
+{
+  background-color: grey;
+}
+
+
+input[type=text]
+{
+  background-color: #ffcc00;
+  border-style: inset;
+  border-color: #ffcc00;
+  color: #201f24;
+  padding: 2px 4px;
+  text-align: left;
+  font-weight: bold;
+  display: inline-block;
+  font-size: 16px;
+  align: right;
+}
+
+input[type=password]
+{
+  background-color: #ffcc00;
+  border-style: inset;
+  border-color: #ffcc00;
+  color: #201f24;
+  padding: 2px 4px;
+  text-align: left;
+  font-weight: bold;
+  display: inline-block;
+  font-size: 16px;
+}
