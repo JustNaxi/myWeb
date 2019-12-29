@@ -38,3 +38,18 @@ CREATE TABLE categories
   name VARCHAR(30) NOT NULL,
   PRIMARY KEY(idCategory) 
 )
+
+CREATE TABLE users
+( 
+  email VARCHAR(30) NOT NULL,
+  username VARCHAR(30) NOT NULL,
+  password VARCHAR(255) NOT NULL,
+  firstname VARCHAR(30),
+  secondname VARCHAR(30),
+  city VARCHAR(30),
+  PSC VARCHAR(5),
+  street VARCHAR(30),
+  telephone VARCHAR(30),
+  status VARCHAR(30) NOT NULL DEFAULT 'User',
+  PRIMARY KEY(email) 
+)
