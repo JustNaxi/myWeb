@@ -18,7 +18,10 @@
     <div class="main">
       <div class="products-wrapper">
         <?php
+
+          if (!empty($_GET['type']))
           $type = mysqli_real_escape_string($conn, $_GET['type']);
+          if (!empty($_GET['manufacture']))
           $manufacture = mysqli_real_escape_string($conn, $_GET['manufacture']);
 
 
