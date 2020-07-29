@@ -95,6 +95,10 @@
   <div class="wrapper-page">
 
     <?php
+    include("topMenu.php");
+    ?>
+    
+    <?php
       include("menu.php");
     ?>
 
