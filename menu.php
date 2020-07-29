@@ -27,18 +27,18 @@
 
         if (mysqli_num_rows($result_inner) > 1)
         {
-          echo "<a href=\"#neco\"><div class=\"menu-dropdown\">".$row["type"];
+          echo "<a href=\"productsPage.php?type=".$row["type"]."\"><div class=\"menu-dropdown\">".$row["type"];
           echo "<div class=\"dropdown-content\">";
           while($row_inner = mysqli_fetch_assoc($result_inner))
           {
-            echo "<a href=\"#neco\"><div class=\"menu-item\">".$row_inner["manufacture"]."</div></a>";
+            echo "<a href=\"productsPage.php?type=".$row["type"]."&manufacture=".$row_inner["manufacture"]."\"><div class=\"menu-item\">".$row_inner["manufacture"]."</div></a>";
           }
           echo "</div>";
           echo "</div></a>";
         }
         else
         {
-          echo "<a href=\"#neco\"><div class=\"menu-item\">".$row["type"]."</div></a>";
+          echo "<a href=\"productsPage.php?type=".$row["type"]."\"><div class=\"menu-item\">".$row["type"]."</div></a>";
         }
 
       }

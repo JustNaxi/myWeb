@@ -18,8 +18,22 @@
     <div class="main">
       <div class="products-wrapper">
         <?php
+          $type = mysqli_real_escape_string($conn, $_GET['type']);
+          $manufacture = mysqli_real_escape_string($conn, $_GET['manufacture']);
+
 
           $sql = "SELECT name, image, description, price FROM guns";
+
+          if (!empty($type))
+          {
+            $sql.=" WHERE type = '$type'";
+
+            if (!empty($manufacture))
+            {
+              $sql.=" AND manufacture = '$manufacture'";
+            }
+          }
+
           $result = mysqli_query($conn, $sql);
 
 

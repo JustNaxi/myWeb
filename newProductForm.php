@@ -5,7 +5,6 @@
     <title>MyPage</title>
 
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="style-products.css">
 
 
 
@@ -94,7 +93,7 @@
   <body>
 
   <div class="wrapper-page">
-    
+
     <?php
       include("menu.php");
     ?>
@@ -103,13 +102,17 @@
         <?php if(true) : ?>
           <center>
             <h1>New product</h1>
-          <form action="addProduct.php" method="post" id="form">
+          <form action="newProduct.php" method="post" id="form" enctype="multipart/form-data">
               <table>
                   <tr><th>Name:</th><th><input type="text" name="name"></th>
-                  <tr><th>Image:</th><th><input type="text" name="image"></th>
-                  <tr><th>Description:</th><th><input cols="40" rows="5" type="textbox" name="description"></th>
+                  <tr><th>Price:</th><th><input type="number" name="price"></th>
+                  <tr><th>Pieces:</th><th><input type="number" name="pcs"></th>
+                  <tr><th>Image:</th><th><input type="file" name="productImage" id="productImage" accept="image/*" size="500000"></th>
               </table>
               <br>
+
+              <div style="transform: translate(-180px, 0%)">Description:</div>
+              <textarea name="message" rows="10" cols="60" name="description"></textarea><br><br><br>
 
               <div id="dynamicInputs">
               </div>
